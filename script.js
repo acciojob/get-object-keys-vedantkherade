@@ -4,11 +4,7 @@ const student = {
   name: "John",
 };
 
-// Add getKeys as a method available to all objects
+// Add getKeys method to Object prototype
 Object.prototype.getKeys = function () {
   return Object.keys(this);
 };
-
-
-// Testing the function
-console.log(getKeys(student)); // Output: ["name"]
